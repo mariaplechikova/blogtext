@@ -1,0 +1,93 @@
+.form {
+    margin: auto;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.block label {
+    display: block;
+}
+
+.form h1 {
+    text-align: center;
+}
+
+.block input, .form>input, select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form input, select {
+    height: 30px;
+    line-height: 20px;
+    margin: 10px auto;
+}
+
+input.message {
+    height: 200px;
+}
+
+.radio input {
+    margin: 5px;
+    width: 20px;
+}
+
+.radio div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.radio div div {
+    width: 100%;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox input {
+    height: 20px;
+    width: 20px;
+    margin: 0px;
+}
+
+@media (min-width: 600px) {
+    .form {
+        width: 600px;
+        padding: 0;
+    }
+
+    .block {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+    }
+
+    .block form {
+        width: 30%;
+    }
+
+    .radio div {
+        flex-wrap: nowrap;
+    }
+
+    .radio div div {
+        width: 150px
+    }
+}
+
+@media (min-width: 850px) {
+    .form {
+        width: 90%;
+        max-width: 1000px;
+    }
